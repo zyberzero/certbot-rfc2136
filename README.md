@@ -20,6 +20,4 @@ Then, setup certbot;
 It will then verify your domain, and then download the certificate. Afterwards, `sudo certbot renew` will update the certificate. Use a renew hook if you want to do something after renewal, such as reloading postfix, or whatever service that uses the certificates.
 
 ## BIND installation
-I'm running BIND on my DNS servers, and followed [this guide] (http://linux.yyz.us/dns/ddns-server.html) to set it up.
-
-
+I'm running BIND on my DNS servers, and followed [this guide](http://linux.yyz.us/dns/ddns-server.html) to set it up.
