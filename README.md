@@ -1,9 +1,9 @@
-#Using certbot (Let's encrypt) with RFC2136
+# Using certbot (Let's encrypt) with RFC2136
 
 Some servers are unable to have a web server installed, but can still make use of a certificate (for example, mail servers).
 These scripts automates the authentication and clean up using DNS for validation. 
 
-##Installation
+## Installation
 
 clone this repo, or download the files.
 Update the files with the data necessary, such as zone name, name server and path to your key-file.
@@ -19,7 +19,7 @@ Then, setup certbot;
 
 It will then verify your domain, and then download the certificate. Afterwards, `sudo certbot renew` will update the certificate. Use a renew hook if you want to do something after renewal, such as reloading postfix, or whatever service that uses the certificates.
 
-##BIND installation
+## BIND installation
 I'm running BIND on my DNS servers, and followed [this guide] (http://linux.yyz.us/dns/ddns-server.html) to set it up.
 
 
